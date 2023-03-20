@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular Crud';
+  title = 'ESCUELA001';
 
   employees =[
     { 'name' : 'Ramiro', Position: 'Manager'},
@@ -15,7 +15,7 @@ export class AppComponent {
   ];
   model:any = {};
   addEmployee(): void {
-
+    this.employees.push(this.model);
   }
   editEmployee(): void {
 
